@@ -1,0 +1,529 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.multibutton__icon img:hover {
+  box-shadow: 1px 2px 10px 2px rgb(248, 141, 0);
+  border-radius: 50px;
+}
+.multibutton__icon img {
+  box-shadow: 2px 2px 10px 3px rgb(0, 221, 192);
+  border-radius: 50px;
+}
+
+.tell {
+  background: rgb(255, 217, 5);
+  width: 40px;
+
+  border-radius: 50px;
+}
+
+.multibutton__item img {
+  width: 50px;
+}
+
+.whatsapp {
+  background: #30d64f;
+}
+
+.viber {
+  background: #7b519d;
+}
+
+.call {
+  background: #ff2241;
+}
+
+.phone {
+  background: #03a9f4;
+}
+
+.yellow {
+  background: #ffce09;
+}
+
+.multibutton {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70px;
+  height: 70px;
+  transition: 0.2s ease;
+}
+
+.multibutton:hover {
+  width: auto;
+  height: auto;
+}
+
+.multibutton:hover .multibutton__list {
+  position: relative;
+  top: auto;
+  bottom: 10px;
+  visibility: visible;
+}
+
+.multibutton:hover .multibutton__item {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s ease;
+  transform: scaleX(1) scaleY(1) translateY(0);
+}
+
+.multibutton__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 13px;
+  top: 80px;
+  visibility: hidden;
+  transition: 0.3s ease;
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.multibutton__title {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 30px;
+  margin-left: 10px;
+  border: 2px solid transparent;
+}
+.multibutton__title:hover {
+  border: 2px solid #ffce09;
+  color: #ffce09;
+}
+
+.multibutton__item {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+  transform: scaleX(0.4) scaleY(0.9) translateY(150px);
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 20px;
+}
+
+.multibutton__button {
+  width: 70px;
+  height: 70px;
+  background: #ffce09;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: animation_button 3s linear infinite;
+  transition: all 500ms ease-out;
+}
+
+@keyframes animation_button {
+  0% {
+    box-shadow: 0 0 0 0 #ffba26, 0 0 0 0 rgba(255, 206, 9, 0.7);
+  }
+  40% {
+    box-shadow: 0 0 0 13.62667px rgba(255, 186, 38, 0),
+      0 0 0 6.81333px rgba(255, 206, 9, 0.7);
+  }
+  80% {
+    box-shadow: 0 0 0 27.25333px rgba(255, 186, 38, 0),
+      0 0 0 13.62667px rgba(255, 206, 9, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 34.06667px rgba(255, 186, 38, 0),
+      0 0 0 27.25333px rgba(255, 206, 9, 0);
+  }
+}
+
+.multibutton__button svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+*/ .multibutton__item:nth-child(1) .multibutton__icon {
+  background: #03a9f4;
+}
+
+.multibutton__item:nth-child(2) .multibutton__icon {
+  background: #ff2241;
+}
+
+.multibutton__item:nth-child(3) .multibutton__icon {
+  background: #7b519d;
+}
+
+.multibutton__item:nth-child(4) .multibutton__icon {
+  background: #30d64f;
+}
+
+.multibutton__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.multibutton__icon svg {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+}
+
+/* Modal */
+
+.call-btn {
+  padding: 5px 30px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  color: #ffffff;
+  background: #ff802c;
+  border: 1px solid transparent;
+  font-weight: 700;
+  transition: 0.5s all ease;
+}
+
+.call-btn:hover {
+  border: 1px solid #ff802c;
+  color: #ff802c;
+  background: transparent;
+}
+
+.fastcall h3 {
+  text-align: center;
+  border-bottom: 2px solid #ff2241;
+  padding-bottom: 15px;
+}
+
+.operator {
+  align-items: center;
+  display: flex;
+}
+
+.operator img {
+  width: 40px;
+  margin-left: 30px;
+}
+
+.operator a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  margin-left: 20px;
+  font-weight: 700;
+  transition: 1s all ease;
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.operator a:hover {
+  border: 1px solid #ff2241;
+}
+
+.whats a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 700;
+  transition: 1s all ease;
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+  border: 0.5px solid #ffce09;
+  margin-top: 20px;
+}
+
+.whats a:hover {
+  color: #30d64f;
+}
+
+/* Navbar */
+.operator1 a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  margin-left: 20px;
+  font-weight: 700;
+  transition: 1s all ease;
+  padding: 2px;
+
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.operator1 a:hover {
+  border: 1px solid #ff2241;
+}
+
+.numb {
+  display: flex;
+  align-items: center;
+}
+
+.numb img {
+  width: 50px;
+}
+
+.block {
+  background: #ff802c;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.block p {
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.header img {
+  margin-left: 100px;
+}
+
+.header__text h1 {
+  font-size: 72px;
+  color: #005577;
+}
+
+.header__text p {
+  font-size: 14px;
+  width: 550px;
+  margin-bottom: 50px;
+}
+
+/* Onas */
+
+.zagolovok {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.onas img {
+  border-radius: 10px;
+}
+
+.line {
+  height: 3px;
+  width: 300px;
+  background: #005577;
+}
+
+.zagolovok h2 {
+  width: 200px;
+  display: block;
+  text-align: center;
+}
+
+.onas__content {
+  display: flex;
+  align-items: center;
+}
+
+.onas__text {
+  margin-left: 50px;
+}
+
+.onas__text ul {
+  font-size: 18px;
+  background: #0072a7;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.onas__text p {
+  font-size: 16px;
+  background: #ff802c;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.uslugi {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+/* Usluga */
+
+.usluga-card {
+  width: 350px;
+  background: #005577;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.usluga-card img {
+  width: 100%;
+  border-radius: 9px 9px 0 0;
+  height: 300px;
+}
+
+.usluga-card p {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+.usluga-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.modalbasik {
+  display: none;
+}
+
+.footer {
+  background: #000;
+}
+
+.log {
+  border-radius: 30px;
+}
+
+.footer-text {
+  color: #fff;
+  text-align: center;
+}
+
+.operator12 a {
+  color: #fff;
+}
+/* Media Queries */
+
+/* 992-1140 */
+@media screen and (max-width: 1200px) {
+}
+
+/* 768-992 */
+@media screen and (max-width: 992px) {
+}
+
+/* 576-768 */
+@media screen and (max-width: 768px) {
+}
+
+/* 320-576 */
+@media screen and (max-width: 576px) {
+  .header {
+    display: block;
+  }
+
+  .header img {
+    width: 100%;
+    margin: 0;
+  }
+  .header__text p {
+    width: 100%;
+  }
+
+  .header img {
+    margin-top: 20px;
+  }
+
+  .onas__content {
+    display: block;
+  }
+
+  .onas__content img {
+    width: 100%;
+  }
+
+  .numb {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .navbar-brand img {
+    width: 150px;
+  }
+
+  .call-btn2 {
+    width: 150px;
+    padding: 5px 10px;
+  }
+
+  .modalbasik {
+    display: block;
+  }
+
+  .block {
+    height: 75px;
+  }
+
+  .header__text h1 {
+    text-align: center;
+  }
+
+  .header__text p {
+    margin-bottom: 10px;
+  }
+
+  .header {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .onas__text {
+    margin: 0;
+    text-align: center;
+  }
+
+  .multibutton {
+    margin-bottom: -10px;
+  }
+
+  .usluga-card {
+    width: 300px;
+    margin: 10px auto;
+  }
+
+  .usluga-card img {
+    height: 250px;
+  }
+}
